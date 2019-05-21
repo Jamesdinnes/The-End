@@ -1,6 +1,6 @@
 {
   "include": [
-    "./**/*.ts", 
+    "**/*.ts", 
     "src/index.tsx",
   ],
   "compilerOptions": {

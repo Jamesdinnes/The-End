@@ -2,7 +2,10 @@
   "name": "the-end",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "pg": "^7.11.0"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.13",
     "jest": "^24.8.0",
