@@ -2,6 +2,8 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const Dotenv = require('dotenv-webpack');
+
 const path = require('path')
 
 const devMode = process.argv.some(arg => arg.includes('development'));
@@ -27,7 +29,7 @@ module.exports = {
         options: {
           emitWarning: true,
           typeCheck: false,
-          configFile: './tslint.json',
+          configFile: '/../../tslint.json',
           tsConfigFile: './tsconfig.json'
         }
       },
@@ -66,6 +68,8 @@ module.exports = {
       host: 'localhost',
       port: 8000,
       proxy: 'http://localhost:8080/'
-    })
+    }),
+    new Dotenv(),
   ]
+  
 };

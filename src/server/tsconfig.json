@@ -1,0 +1,25 @@
+{
+  "include": [
+    "./**/*.ts", 
+    "src/index.tsx",
+  ],
+  "compilerOptions": {
+    "rootDir": ".",
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "noImplicitAny": false,
+    "jsx": "react"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

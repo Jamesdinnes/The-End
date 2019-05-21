@@ -1,0 +1,1 @@
+export const endpoint = process.env.NODE_ENV === 'production' ? process.env.PRODUCTION_ENDPOINT : process.env.DEVELOPMENT_ENDPOINT
