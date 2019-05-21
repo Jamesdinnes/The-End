@@ -8,3 +8,4 @@ export const pool = new Pool({
   database: process.env.DB_NAME,
   port: 5432,
 })
+
