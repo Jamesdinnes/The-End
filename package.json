@@ -1,0 +1,17 @@
+{
+  "name": "the-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "dev": "npm run dev:ui && dev:server",
+    "dev:ui": "npm start --prefix ./src/client",
+    "dev:server" : ""
+  },
+  "author": "",
+  "license": "ISC"
+}
