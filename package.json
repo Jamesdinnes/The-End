@@ -4,13 +4,16 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^24.0.13",
     "jest": "^24.8.0",
     "typescript": "^3.4.5"
   },
   "scripts": {
+    "install": "",
     "dev": "npm run dev:ui && dev:server",
     "dev:ui": "npm start --prefix ./src/client",
-    "dev:server" : ""
+    "dev:server": "",
+    "postinstall": "cd ./src/client && npm i && cd ../server && npm i"
   },
   "author": "",
   "license": "ISC"
